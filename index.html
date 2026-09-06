@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codealpha Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <h1>Image Gallery</h1>
+
+    <div class="buttons">
+        <button id="filterBtn">⚙ Filter</button>
+    </div>
+
+    <div class="gallery-container">
+        <img class="gallery-img" data-category="nature" src="nature1.jpg" alt="waterfall">
+        <img class="gallery-img" data-category="nature" src="nature 2.jpg" alt="mountain">
+        <img class="gallery-img" data-category="nature" src="nature 3.jpg" alt="forest">
+        <img class="gallery-img" data-category="nature" src="nature 4.jpg" alt="sunset">
+        <img class="gallery-img" data-category="cars" src="car 1.jpg" alt="sports-car">
+        <img class="gallery-img" data-category="cars" src="car 2.jpg" alt="luxury-car">
+        <img class="gallery-img" data-category="cars" src="car 3.jpg" alt="classic-car">
+        <img class="gallery-img" data-category="animals" src="animal1.jpg" alt="lion">
+        <img class="gallery-img" data-category="animals" src="animal2.jpg" alt="tiger">
+        <img class="gallery-img" data-category="animals" src="animal 3.jpg" alt="deer">
+        <img class="gallery-img" data-category="cities" src="city 1.jpg" alt="night-city">
+        <img class="gallery-img" data-category="cities" src="city 2.jpg" alt="buildings">
+        <img class="gallery-img" data-category="cities" src="city 3.jpg" alt="buildings">
+        <img class="gallery-img" data-category="cities" src="city 4.jpg" alt="buildings">
+        <img class="gallery-img" data-category="cities" src="city 5.jpg" alt="buildings">
+
+    </div>
+
+    <div id="imageModal" class="modal">
+
+        <span id="closeModal">&times;</span>
+
+        <button id="prevBtn">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <img id="modalImage" src="" alt="">
+
+        <button id="nextBtn">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+    <div class="buttons" id="categoryButtons">
+        <button id="allBtn">All</button>
+        <button id="natureBtn">Nature</button>
+        <button id="carsBtn">Cars</button>
+        <button id="animalsBtn">Animals</button>
+        <button id="citiesBtn">Cities</button>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
