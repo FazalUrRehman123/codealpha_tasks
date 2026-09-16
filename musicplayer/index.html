@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="music-player">
+
+        <h1>Music Player</h1>
+
+        <div class="cover">
+            <img id="cover" src="images/cover 1.jpg" alt="Song Cover">
+        </div>
+
+        <div class="song-info">
+            <h2 id="songTitle">Dreams</h2>
+            <p id="artist">Unknown Artist</p>
+        </div>
+
+        <audio id="audio"></audio>
+
+        <div class="progress-area">
+            <span id="currentTime">0:00</span>
+            <input type="range" id="progress" value="0">
+            <span id="duration">0:00</span>
+        </div>
+
+        <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play">▶</button>
+            <button id="next">⏭</button>
+        </div>
+
+        <div class="volume">
+            <span>🔊</span>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        </div>
+
+        <div class="playlist">
+            <h3>Playlist</h3>
+
+            <div class="song active" data-index="0">
+                <span>Dreams</span>
+                <span>▶</span>
+            </div>
+
+            <div class="song" data-index="1">
+                <span>Summer</span>
+                <span>▶</span>
+            </div>
+
+            <div class="song" data-index="2">
+                <span>Memories</span>
+                <span>▶</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
